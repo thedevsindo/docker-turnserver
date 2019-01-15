@@ -8,6 +8,7 @@ ENV TURN_PORT_START 10000
 ENV TURN_PORT_END 20000
 ENV TURN_SECRET mysecret
 ENV TURN_SERVER_NAME coturn
+ENV TURN_REALM foo.bar
 
 COPY start_turnserver.sh /start_turnserver.sh
 RUN chmod +x start_turnserver.sh
